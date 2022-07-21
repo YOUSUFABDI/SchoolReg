@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-reg-system</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="" class="nav-title"><h3 >Student Registration Form</h3></a>
+    </nav>
+
+    <div class="container">
+        <div class="left"><</div>
+        <img name="slide">
+        <div class="right">></div>
+    </div>
+    <!-- toggle light & dark -->
+    <i class="bi bi-brightness-high-fill" id="toggleLight"></i>
+    <!-- toggle light & dark -->
+
+    <div class="regisiter-student">
+        <h3 class="reg"><span class="reg1">Register</span> New Student</h2>
+            <form class="student-form">
+                <div class="row">
+                    <label for="firstname">first Name</label>
+                    <div class="col">
+                        <input type="text" id="firstName" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="lastname">last Name</label>
+                    <div class="col">
+                        <input type="text" id="lastName" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="idnumber">id Number</label>
+                    <div class="col">
+                        <input type="text" id="idNumber">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="classRoom">class Room</label>
+                    <div class="col">
+                        <input type="text" id="classRoom" >
+                    </div>
+                </div>
+                <button type="submit" id="btn">Register</button>
+            </form>
+            <br>
+            <hr>
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>firstName</th>
+                        <th>lastName</th>
+                        <th>IdNumber</th>
+                        <th>classRoom</th>
+                        <th>remove</th>
+                    </tr>
+                </thead>
+                <tbody id="all-students">
+                    
+                </tbody>
+            </table>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
